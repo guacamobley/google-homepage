@@ -1,0 +1,104 @@
+
+*{
+	-webkit-appearance: none;
+	box-sizing: border-box;
+}
+
+#navbar{
+	width: 100%;
+	top:20px;
+	position: absolute;
+	justify-self: stretch;
+}
+
+.navitem{
+	padding: 10px;
+}
+
+#navbar div{
+	display: inline-block;
+	font-size: 14px;
+}
+
+#left{
+	left: 0px;
+	position: absolute;
+}
+
+#right{
+	right: 0px;
+	position: absolute;
+}
+
+#center{
+	left:0;
+	right:0;
+	top: 200px;
+	height: 250px;
+	width: 500px;
+	position: absolute;
+	margin: auto;
+
+	display: grid;
+
+	
+	grid-template-rows: 100px 50px 50px;
+	grid-template-columns: 50px 200px 200px 50px;
+	grid-template-areas: 	". a a ."
+							"b b b b"
+							". c c .";
+
+}
+
+#logo{
+	grid-area: a;
+	justify-self: center;
+	align-self: start;
+}
+
+#query{
+	align-self: center;
+	grid-area: b;
+	height: 40px;
+	width: 500px;
+	border-radius: 40px;
+	background-image: url("../images/magnifying-glass.jpg");
+	background-size: contain;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	padding-left: 40px;
+
+}
+
+.buttons{
+	justify-self: center;
+	align-self: end;
+	grid-area: c;
+}
+
+#search, #lucky{
+	height: 35px;
+	border-radius: 5px
+}
+
+#search{
+	border: solid;
+	border-width: 1px;
+	border-color: gray;
+	color: blue;
+}
+
+#lucky{
+	border: none;
+	color: blue;
+}
+button{
+	background-color: white;
+	background-image: none;
+}
+
+#attributions{
+	position: absolute;
+	bottom:0px;
+	left:0px;
+}
