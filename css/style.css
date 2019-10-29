@@ -6,7 +6,7 @@
 
 #navbar{
 	width: 100%;
-	top:20px;
+	top:0px;
 	position: absolute;
 }
 
@@ -20,9 +20,9 @@
 
 footer{
 	position: absolute;
-	bottom: 20px;
+	bottom: 50px;
 	width: 100%;
-	margin: 10px;
+	margin: 0px;
 	clear: both;
 	display: inline;
 }
@@ -44,7 +44,7 @@ footer ul{
 }
 
 #right, #right-footer{
-	right: 20px;
+	right: 30px;
 	width: 50%;
 	position: absolute;
 	display: flex;
